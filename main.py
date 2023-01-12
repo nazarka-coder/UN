@@ -56,7 +56,6 @@ class MainApp(App):
     def btn_pressed(self, *args):
         if self.input_num.text.isdigit():
             self.data.text = f'[b][i][size=40]{self.canonical_form(int(self.input_num.text))}[/size][/i][/b]'
-
             self.input_num.text = ''
 
     def build(self):
